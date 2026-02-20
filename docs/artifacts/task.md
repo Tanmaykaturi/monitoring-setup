@@ -1,0 +1,45 @@
+# Task: Create Multi-Cluster Setup Guide
+
+- [x] Research Multi-Cluster Patterns <!-- id: 20 -->
+    - [x] Identify Prometheus Remote Write configuration <!-- id: 21 -->
+    - [x] Identify Elasticsearch external access configuration <!-- id: 22 -->
+- [x] Draft Setup Steps <!-- id: 23 -->
+    - [x] Document Monitoring Cluster (Receiver) configuration <!-- id: 24 -->
+    - [x] Document Target Cluster (Sender) configuration <!-- id: 25 -->
+    - [x] Add verification steps <!-- id: 26 -->
+- [x] Finalize and notify user <!-- id: 27 -->
+- [x] Expand Multi-Cluster Guide with Granular Details <!-- id: 28 -->
+    - [x] Detail Prometheus Remote Write steps <!-- id: 29 -->
+    - [x] Detailed ELK Log Shipping steps (Fluent-bit Scratch & Ingress) <!-- id: 30 -->
+    - [x] Add security best practices <!-- id: 31 -->
+- [x] Clarify Target Cluster configuration steps <!-- id: 32 -->
+    - [x] Specify file/command context for Step B 2 <!-- id: 33 -->
+- [x] Verify Multi-Cluster Connectivity <!-- id: 34 -->
+    - [x] Draft metrics verification steps (Prometheus) <!-- id: 35 -->
+    - [x] Draft logging verification steps (ELK) <!-- id: 36 -->
+    - [x] Create troubleshooting checklist <!-- id: 37 -->
+    - [x] Remote verification by user (Metrics confirmed) <!-- id: 38 -->
+- [x] Create Grafana Dashboard Guide <!-- id: 39 -->
+    - [x] Draft manual creation steps <!-- id: 40 -->
+    - [x] Add instructions for variables (Multi-cluster support) <!-- id: 41 -->
+    - [x] List recommended community dashboards <!-- id: 42 -->
+- [x] Add Pod Health & Troubleshooting Queries <!-- id: 46 -->
+- [x] Expand Grafana Guide: JSON Import <!-- id: 47 -->
+    - [x] Document JSON import steps <!-- id: 48 -->
+- [x] Create Kibana Dashboard Guide (SSD Logs) <!-- id: 49 -->
+    - [x] Document Data View creation <!-- id: 50 -->
+    - [x] Document error pattern identification <!-- id: 51 -->
+    - [x] Document Lens visualizations (Trends/Errors) <!-- id: 52 -->
+    - [x] Document Dashboard assembly and sharing <!-- id: 53 -->
+- [x] Debugging ELK 404, 502, 401, and 400 issues <!-- id: 54 -->
+- [/] Create/Update Kibana SSD Dashboard & Alerts <!-- id: 68 -->
+    - [x] Identify SSD log patterns and error types <!-- id: 69 -->
+    - [x] Create/Update Kibana Dashboard Guide with SSD visuals <!-- id: 70 -->
+    - [x] Integrate Kibana Alerting (Connectors/Rules) into documentation <!-- id: 71 -->
+    - [/] Wait for user validation against real logs <!-- id: 72 -->
+- [/] Set up Multi-Cluster Alerting <!-- id: 63 -->
+    - [x] Review current Alertmanager and Prometheus rules <!-- id: 64 -->
+    - [x] Create Multi-Cluster Alerting Guide <!-- id: 65 -->
+    - [x] Document Prometheus Alert Rules for remote clusters <!-- id: 66 -->
+    - [x] Document Kibana (Elasticsearch) monitor/alert setup <!-- id: 67 -->
+    - [x] Resolve Kibana "Missing Encryption Key" error <!-- id: 73 -->

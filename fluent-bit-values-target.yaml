@@ -1,0 +1,28 @@
+config:
+  service: |
+    [SERVICE]
+        Flush         1
+        Log_Level     info
+        Daemon        off
+        Parsers_File  parsers.conf
+
+  filters: |
+    [FILTER]
+        Name          modify
+        Match         *
+        Add           cluster target-cluster-01
+
+  outputs: |
+    [OUTPUT]
+        Name            es
+        Match           *
+        Host            elasticsearch.monitoring.opsmx.org
+        Port            443
+        TLS             On
+        TLS.Verify      Off
+        HTTP_User       elastic
+        HTTP_Passwd     3Rr3NiPl02lJqQ2y
+        Logstash_Format On
+        Logstash_Prefix target-01-logs
+        Buffer_Size     5M
+        Suppress_Type_Name On

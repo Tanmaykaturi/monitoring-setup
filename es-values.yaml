@@ -1,0 +1,5 @@
+# Allow scheduling on same node if necessary (Soft Anti-Affinity)
+antiAffinity: "soft"
+
+# Keep 3 replicas for high availability (software level), even if hardware level redundancy is reduced.
+replicas: 3
